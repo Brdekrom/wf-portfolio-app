@@ -1,25 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Outlet, createBrowserRouter, RouterProvider, Route, NavLink } from "react-router-dom";
+import styles from "./App.module.css";
+
+const Root = () => {
+  return (
+      <NavLink className={({isActive}) => isActive ? styles.activeNavLink : styles.navLink} to="/" ></NavLink>
+  )
+}
 
 function App() {
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Root/>
+    }
+   ])
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <RouterProvider router={router} />
   );
 }
 
