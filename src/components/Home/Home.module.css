@@ -1,0 +1,66 @@
+p{
+    font-size: 1.2rem;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+}
+
+.bouncy{
+    background-color: rgb(0, 161, 228);
+    border-radius: 5px;
+    border: 0px;
+    box-shadow: 1px 1px 2px black;
+    padding: 15px 15px;
+    font-size: 1.5rem;
+    gap: 2px;
+    animation:bouncy 5s infinite linear;
+    position:relative;
+    }
+    @keyframes bouncy {
+    0%{top:0em}
+    40%{top:0em}
+    43%{top:-0.9em}
+    46%{top:0em}
+    48%{top:-0.4em}
+    50%{top:0em}
+    100%{top:0em;}
+    }
+
+.bouncy:hover{
+    cursor: pointer;
+    background-color:rgb(94, 182, 228) ;
+    color: white;
+}
+
+
+a, span {
+    text-decoration: none;
+    color: rgb(0, 161, 228);
+}
+
+header {
+    
+}
+
+.intro {
+    text-align: center;
+    font-size:large;
+    max-width: 80%;
+    margin-left: 10%;
+    align-items: center;
+}
+
+.intro h1 {
+    text-shadow: 1px 1px 2px black ;
+    color: rgb(0, 39, 118);
+    font-size: 2.5rem;
+}
+
+.bdk{
+    max-height: 250px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px 5px darkgray;
+}
