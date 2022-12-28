@@ -1,0 +1,9 @@
+a, span {
+    text-decoration: none;
+    color: rgb(0, 161, 228);
+}
+header {
+    text-align: center;
+    text-shadow: 1px 1px 2px black ;
+    color: rgb(0, 39, 118);
+}

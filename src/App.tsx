@@ -2,7 +2,9 @@ import React from 'react';
 import { Outlet, createBrowserRouter, RouterProvider, Route, NavLink } from "react-router-dom";
 import styles from "./App.module.css";
 import Root from "./components/Root/Root"
-import HomePage from './components/HomePage/HomePage';
+import Home from './components/Home/Home';
+import Portfolio from './components/Portfolio/Portfolio';
+import Contact from './components/Contact/Contact';
 
 // const Root = () => {
 //   return (
@@ -19,7 +21,15 @@ function App() {
       children: [
         {
           path: "",
-          element: <HomePage/>
+          element: <Home/>
+        },
+        {
+         path:"/portfolio",
+         element: <Portfolio/>
+        },
+        {
+          path:"/contact",
+          element: <Contact/>
         }
       ]
     }
