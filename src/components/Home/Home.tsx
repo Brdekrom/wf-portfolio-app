@@ -1,4 +1,6 @@
 import styles from "./Home.module.css"
+import { NavLink } from "react-router-dom"
+import HomeButton from "./HomeButton";
 
 const Home = () => {
     let birthdate: Date = new Date("1997-08-12")
@@ -8,11 +10,16 @@ const Home = () => {
     return (
         <>
         <main>
-            <header className={styles.header}>
+            <section className={styles.intro}>
+                <figure>
+                    <img src="/bdk.jpg" alt="" className={styles.bdk} />
+                </figure>
                 <h1>Brayan de Krom's portfolio</h1>
-            </header>
-            <section className={styles.Intro}>
-                <p>Hi there! <br/> My name is Brayan (Brian) de Krom, I am {age} years old, I've started studying in 2021 to become a programmer at <a title="AP Hogeschool Antwerpen is een pluralistische Vlaamse hogeschool in Antwerpen" href="https://www.ap.be/">AP hogeschool</a> in antwerp, besides my now partime job as customer service executive and Junior .Net developer I'm also an official  <span title="Royal Belgian Football Assosiation">Jouth RBFA referee</span></p>
+                <p>Hi there! <br/> My name is Brayan (Brian) de Krom, I am {age} years old, I've started studying in 2021 to become a programmer at <a title="AP Hogeschool Antwerpen is een pluralistische Vlaamse hogeschool in Antwerpen" href="https://www.ap.be/">AP hogeschool</a> in antwerp, besides my now partime job as a Logistics Customer Service executive and Junior .Net developer I'm also an official  <span title="Royal Belgian Football Assosiation">Jouth RBFA referee</span></p>
+            </section>
+            <section className={styles.buttonContainer}>
+            <HomeButton linkTo="/portfolio" text="Portfolio"></HomeButton>
+            <HomeButton linkTo="/contact" text="Contact"></HomeButton>
             </section>
         </main>
         </>

@@ -16,7 +16,8 @@ const Root = () => {
         </header>
         <Outlet/>
         <footer className={styles.footer}>
-        footer
+        <p>&copy; 2022 Brayan de Krom, All rights reserved</p>
+        
         </footer>
         </>
     )

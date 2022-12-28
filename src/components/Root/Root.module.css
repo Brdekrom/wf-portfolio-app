@@ -1,5 +1,9 @@
 .topNavigation{
+    position: sticky;
     width: 100%;
+    z-index: 999;
+    top: -10px;
+    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
 }
 .topNavigation ul {
     list-style-type: none;
@@ -7,7 +11,7 @@
     padding: 0;
     overflow: hidden;
     background-color: rgb(0, 161, 228) ;
-    border-bottom: 2px solid #888888;
+    box-shadow: ;
 }
 
 .topNavigation li {
@@ -20,6 +24,10 @@
     text-decoration: none;
     text-align: center;
     padding: 16px;
+}
+
+.topNavigation li:hover {
+    background-color: rgb(227, 114, 34);
 }
 
 .footer{
