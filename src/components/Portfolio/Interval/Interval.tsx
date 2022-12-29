@@ -1,6 +1,7 @@
 import Timer from "./Timer"
 import styles from "./Interval.module.css"
 import CurrentTime from "./CurrentTime"
+import RandomValue from "./RandomValue"
 
 
 const Interval = () => {
@@ -11,6 +12,10 @@ const Interval = () => {
         <Timer/>
         <br />
         <CurrentTime/>
+        <br />
+        <RandomValue min={1} max={100}/>
+        <br />
+        <RandomValue min={100} max={200}/>
         </div>
         
         </>
