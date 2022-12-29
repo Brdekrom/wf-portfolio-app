@@ -3,57 +3,77 @@ import styles from "./Portfolio.module.css"
 import ShoppingList from "./ShoppingList/SoppingList"
 import HomeButton from "../Home/HomeButton"
 const Portfolio = () => {
+
     return (
         <><main className={styles.portfolioMain}>
             <section className={styles.bouncy4}>
                 <div>
                     <header>
-                    <h1>ShoppingList</h1>
+                        <h1>ShoppingList</h1>
                     </header>
                     <body>
                         <p>Here you will be able to check a little shopping list created with React, typescript and no further non-react libraries</p>
-                    </body>
-                    <button>
+                        <button>
                             <NavLink to="/portfolio/shoppinglist">Check it out!</NavLink>
                         </button>
+                    </body>
+
                 </div>
             </section>
 
             <section className={styles.bouncy3}>
-                <div>Hello world
+                <div>
                     <header>
-                        <button>
-                            <NavLink to="/">Or this one?</NavLink>
-                        </button>
+                        <h1>Filtering</h1>
                     </header>
+                    <body>
+                        <p>Small filter and sort demonstration. Warning: Caps sensitive.</p>
+                        <button>
+                            <NavLink to="/portfolio/filtering">Or this one?</NavLink>
+                        </button>
+                    </body>
                 </div>
             </section>
 
             <section className={styles.bouncy2}>
-                <div>Hello world
+                <div>
                     <header>
-                        <button>
-                            <NavLink to="/">Try this one!</NavLink>
-                        </button>
+                        <h1>Interval</h1>
                     </header>
+                    <body>
+                        <p>Showing a timer, current time and random values.</p>
+                        <button>
+                            <NavLink to="/portfolio/interval">Or this one?</NavLink>
+                        </button>
+                    </body>
                 </div>
             </section>
 
             <section className={styles.bouncy1}>
-                <div>Hello world
+                <div>
                     <header>
-                        <button>
-                            <NavLink to="/">Or this one?</NavLink>
-                        </button>
+                        <h1>Pokemon</h1>
                     </header>
+                    <body>
+                        <p>Pokemon app using API calls from https://pokeapi.co/</p>
+                        <button>
+                            <NavLink to="/portfolio/pokemon">Or this one?</NavLink>
+                        </button>
+                    </body>
                 </div>
             </section>
 
             <section className={styles.bouncy1}>
-                <div>Hello world<header><button>
-                    <NavLink to="/">Look to this one!</NavLink>
-                </button>
-                </header>
+                <div>
+                    <header>
+                        <h1>DadJoke</h1>
+                    </header>
+                    <body>
+                        <p>DadJokes with a favorite joke setter using API calls from https://icanhazdadjoke.com/</p>
+                        <button>
+                            <NavLink to="/portfolio/dadjoke">Or this one?</NavLink>
+                        </button>
+                    </body>
                 </div>
             </section>
 
@@ -66,7 +86,7 @@ const Portfolio = () => {
                     </header>
                 </div>
             </section>
-            
+
             <section className={styles.bouncy3}>
                 <div>
                     Hello world
@@ -77,12 +97,12 @@ const Portfolio = () => {
                     </header>
                 </div>
             </section>
-            
+
             <section className={styles.bouncy4}>
                 <div>Hello world
                     <header>
                         <button>
-                            <NavLink to="/">Maybe this one then?</NavLink>
+                            <NavLink to="/">Or maybe this one then?</NavLink>
                         </button>
                     </header>
                 </div>
