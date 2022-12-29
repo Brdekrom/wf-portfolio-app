@@ -8,6 +8,7 @@ import Contact from './components/Contact/Contact';
 import ShoppingList from './components/Portfolio/ShoppingList/SoppingList';
 import Filtering from './components/Portfolio/Filtering/Filtering';
 import Interval from './components/Portfolio/Interval/Interval';
+import Pokedex from './components/Portfolio/Pokemon/Pokedex';
 
 
 function App() {
@@ -40,6 +41,10 @@ function App() {
         {
           path: "/portfolio/Interval",
           element: <Interval/>
+        },
+        {
+          path: "/portfolio/pokedex",
+          element: <Pokedex/>
         }
 
       ]
