@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom"
 import styles from "./Portfolio.module.css"
 import ShoppingList from "./ShoppingList/SoppingList"
+import HomeButton from "../Home/HomeButton"
 const Portfolio = () => {
     return (
         <><main className={styles.portfolioMain}>
@@ -86,7 +87,11 @@ const Portfolio = () => {
                     </header>
                 </div>
             </section>
-
+            <section className={styles.reactPortfolioMessage}>
+                <h2>Do You approve what you see?</h2>
+                <p>Please feel free to contact me with the button here below: </p>
+                <HomeButton linkTo={"/contact"} text={"Contact"}></HomeButton>
+            </section>
 
 
 

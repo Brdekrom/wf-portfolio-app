@@ -39,6 +39,9 @@
     color: white;
     text-align: center;
 }
+.vercel {
+    width: 100px;
+}
 
 .active{
     background-color: rgb(94, 182, 228);

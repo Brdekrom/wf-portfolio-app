@@ -72,6 +72,10 @@
     100%{top:0em;}
     }
 
+.main{
+    margin-top: 1;
+}
+
 .bouncy:hover{
     cursor: pointer;
     background-color:rgb(94, 182, 228) ;
