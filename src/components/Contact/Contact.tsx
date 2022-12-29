@@ -47,7 +47,7 @@ const Contact = () => {
                 <textarea name="message" onChange={event => setMessage(event.target.value)} value={message} placeholder="Write here your message" />
                 {validator(email, name, message) && <input className={styles.submitButton} onClick={() => setTimeout(handleClick, 500)} type="submit" value="Send" />}
             </form>
-            <Abbout />
+            <Abbout text="Thanks for taking your time to email Me."/>
         </main>
 
 
