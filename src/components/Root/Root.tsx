@@ -16,7 +16,7 @@ const Root = () => {
         </header>
         <Outlet/>
         <footer className={styles.footer}>
-        <p>&copy; 2022 Brayan de Krom, All rights reserved.</p>
+        <p>&copy; 2022 Brayan de Krom, All rights reserved. Powered by <a href="https://wf-portfolio-app.vercel.app/"> <img className={styles.vercel} src="/Vercel_logo.png" alt="" /></a></p>
         </footer>
         </>
     )

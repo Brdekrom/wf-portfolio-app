@@ -5,38 +5,39 @@ import Root from "./components/Root/Root"
 import Home from './components/Home/Home';
 import Portfolio from './components/Portfolio/Portfolio';
 import Contact from './components/Contact/Contact';
+import ShoppingList from './components/Portfolio/ShoppingList/SoppingList';
 
-// const Root = () => {
-//   return (
-//       <NavLink className={({isActive}) => isActive ? styles.activeNavLink : styles.navLink} to="/" ></NavLink>
-//   )
-// }
 
 function App() {
 
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Root/>,
+      element: <Root />,
       children: [
         {
           path: "",
-          element: <Home/>
+          element: <Home />
         },
         {
-         path:"/portfolio",
-         element: <Portfolio/>
+          path: "/portfolio",
+          element: <Portfolio />,
         },
         {
-          path:"/contact",
-          element: <Contact/>
+          path: "/contact",
+          element: <Contact />
+        },
+        {
+          path: "/portfolio/:id",
+          element: <ShoppingList />
         }
+
       ]
     }
-   ])
- 
+  ])
+
   return (
-   <RouterProvider router={router} />
+    <RouterProvider router={router} />
   );
 }
 

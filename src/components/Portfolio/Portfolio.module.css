@@ -1,0 +1,129 @@
+.portfolioMain {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 70vh;
+    background-color: white;
+}
+
+.portfolioMain section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: solid;
+    width: 20vw;
+    height: 20vh;
+    margin-top: 5vh;
+    color: white;
+}
+
+.portfolioMain h1 {
+    color: rgb(227, 114, 34);
+    text-decoration: underline solid white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.portfolioMain button {
+    background-color: rgb(227, 114, 34);
+    text-align: center;
+    padding: 9px;
+}
+
+.bouncy1 {
+    background-color: rgb(0, 161, 228);
+    border-radius: 5px;
+    border: 0px;
+    box-shadow: 1px 1px 2px black;
+    padding: 15px 15px;
+    font-size: 1.5rem;
+    gap: 2px;
+    animation: bouncy 10s infinite linear;
+    position: relative;
+}
+
+
+
+.bouncy2 {
+    background-color: rgb(0, 161, 228);
+    border-radius: 5px;
+    border: 0px;
+    box-shadow: 1px 1px 2px black;
+    padding: 15px 15px;
+    font-size: 1.5rem;
+    gap: 2px;
+    animation: bouncy 9s infinite linear;
+    position: relative;
+}
+
+.bouncy3 {
+    background-color: rgb(0, 161, 228);
+    border-radius: 5px;
+    border: 0px;
+    box-shadow: 1px 1px 2px black;
+    padding: 15px 15px;
+    font-size: 1.5rem;
+    gap: 2px;
+    animation: bouncy 10.5s infinite linear;
+    position: relative;
+}
+
+.bouncy4 {
+    background-color: rgb(0, 161, 228);
+    border-radius: 5px;
+    border: 0px;
+    box-shadow: 1px 1px 2px black;
+    padding: 15px 15px;
+    font-size: 1.5rem;
+    gap: 2px;
+    animation: bouncy 9.5s infinite linear;
+    position: relative;
+}
+
+@keyframes bouncy {
+    0% {
+        top: 0em
+    }
+
+    40% {
+        top: 0em
+    }
+
+    43% {
+        top: -0.9em
+    }
+
+    46% {
+        top: 0em
+    }
+
+    48% {
+        top: -0.4em
+    }
+
+    50% {
+        top: 0em
+    }
+
+    100% {
+        top: 0em;
+    }
+}
+
+
+.bouncy:hover {
+    background-color: rgb(94, 182, 228);
+    color: white;
+}
+
+.reactPortfolioMessage h2 {
+    color: rgb(227, 114, 34);
+    text-decoration: none;
+}
+.reactPortfolioMessage p {
+    color: rgb(227, 114, 34);
+    text-decoration: none;
+}
