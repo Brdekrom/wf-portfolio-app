@@ -12,10 +12,11 @@ const Portfolio = () => {
                     </header>
                     <body>
                         <p>Here you will be able to check a little shopping list created with React, typescript and no further non-react libraries</p>
-                    </body>
-                    <button>
+                        <button>
                             <NavLink to="/portfolio/shoppinglist">Check it out!</NavLink>
                         </button>
+                    </body>
+                    
                 </div>
             </section>
 
