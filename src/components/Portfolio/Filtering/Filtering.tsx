@@ -50,7 +50,7 @@ const Filtering = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {students.filter((student) => student.name.startsWith(searchItem))
+                        {students.filter((student) => student.name.toUpperCase().startsWith(searchItem))
                             .map((student) =>
                             (
                                 <tr>

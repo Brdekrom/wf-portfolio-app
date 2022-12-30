@@ -8,6 +8,9 @@ import Contact from './components/Contact/Contact';
 import ShoppingList from './components/Portfolio/ShoppingList/SoppingList';
 import Filtering from './components/Portfolio/Filtering/Filtering';
 import Interval from './components/Portfolio/Interval/Interval';
+import Pokedex from './components/Portfolio/Pokemon/Pokedex';
+import DadJoke from './components/Portfolio/DadJoke/DadJoke';
+import Todo from './components/Portfolio/Todo/Todo';
 
 
 function App() {
@@ -19,28 +22,43 @@ function App() {
       children: [
         {
           path: "",
-          element: <Home/>
+          element: <Home />
         },
         {
           path: "/portfolio",
-          element: <Portfolio/>,
+          element: <Portfolio />,
         },
         {
           path: "/contact",
-          element: <Contact/>
+          element: <Contact />
         },
         {
           path: "/portfolio/shoppinglist",
-          element: <ShoppingList/>
+          element: <ShoppingList />
         },
         {
           path: "/portfolio/filtering",
-          element: <Filtering/>
+          element: <Filtering />
         },
         {
           path: "/portfolio/Interval",
-          element: <Interval/>
+          element: <Interval />
+        },
+        {
+          path: "/portfolio/pokedex",
+          element: <Pokedex />
         }
+        ,
+        {
+          path: "/portfolio/dadjoke",
+          element: <DadJoke />
+        }
+        ,
+        {
+          path: "/portfolio/todo",
+          element: <Todo />
+        }
+
 
       ]
     }

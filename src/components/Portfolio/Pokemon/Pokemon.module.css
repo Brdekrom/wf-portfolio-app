@@ -1,0 +1,13 @@
+.PokeMain {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50vw;
+    margin-left: 25vw;
+}
+.PokeMain input, .pokeMain button {
+    width: 20vw;
+}
+.PokeMain button {
+    width: 20.4vw;
+}

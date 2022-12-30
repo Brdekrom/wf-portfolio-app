@@ -1,0 +1,35 @@
+.jokeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 10vh;
+    flex-wrap: wrap;
+}
+
+.joke{
+    border: 1px solid black;
+    border-radius: 5px;
+    text-shadow: 1px 1px 2px black ;
+    color: rgb(0, 39, 118);
+    font-size: 1rem;
+    padding: 10px 10px;
+    box-shadow: 0px 0px 5px 5px darkgray;
+    width: 50vw;
+    margin-top: 10px ;
+}
+
+.jokeButton {
+    color: white;
+    margin-top: 2rem;
+    padding: 2rem;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: rgb(0,161,222);
+    font-size: 1.3rem;
+    box-shadow: 1px 1px 2px black;
+    padding: 15px 15px;
+    gap: 2px;
+    animation:bouncy 5s infinite linear;
+    position:relative;
+    cursor: pointer;
+}

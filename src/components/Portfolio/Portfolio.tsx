@@ -52,12 +52,12 @@ const Portfolio = () => {
             <section className={styles.bouncy1}>
                 <div>
                     <header>
-                        <h1>Pokemon</h1>
+                        <h1>Pokedex</h1>
                     </header>
                     <body>
                         <p>Pokemon app using API calls from https://pokeapi.co/</p>
                         <button>
-                            <NavLink to="/portfolio/pokemon">Or this one?</NavLink>
+                            <NavLink to="/portfolio/pokedex">Or this one?</NavLink>
                         </button>
                     </body>
                 </div>
@@ -78,12 +78,16 @@ const Portfolio = () => {
             </section>
 
             <section className={styles.bouncy2}>
-                <div>Hello world
+            <div>
                     <header>
-                        <button>
-                            <NavLink to="/">How about this one?</NavLink>
-                        </button>
+                        <h1>Todo's</h1>
                     </header>
+                    <body>
+                        <p>small todo's list with checkboxes</p>
+                        <button>
+                            <NavLink to="/portfolio/todo">Or this one?</NavLink>
+                        </button>
+                    </body>
                 </div>
             </section>
 
