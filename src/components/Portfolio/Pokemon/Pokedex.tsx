@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
 import { ColorRing } from "react-loader-spinner"
 import styles from "./Pokemon.module.css"
+import LoadingIndicator from "../../LoadingIndicator/LoadingIndicator"
+import Abbout from "../../Abbout/Abbout"
 
 interface Pokedex {
     results: Pokemon[]
@@ -13,19 +15,6 @@ interface Pokemon {
 
 interface PokedexProps {
     limit?: number
-}
-const LoadingIndicator = () => {
-    return (
-        <ColorRing
-            visible={true}
-            height="80"
-            width="80"
-            ariaLabel="blocks-loading"
-            wrapperStyle={{}}
-            wrapperClass="blocks-wrapper"
-            colors={["#e15b64", "#f47e60", "#f8b26a", "#abbd81", "#849b87"]}
-        />
-    )
 }
 
 const Pokedex = ({ limit }: PokedexProps) => {
@@ -56,8 +45,7 @@ const Pokedex = ({ limit }: PokedexProps) => {
     return (
         <main className={styles.pokeMain}>
             <div>
-                <input type="text" onChange={event => setSearch(event.target.value)} value={search} />
-                
+                <input type="text" onChange={event => setSearch(event.target.value)} value={search} placeholder="Search" />
             </div>
             {loading && <LoadingIndicator />}
             <ul>
@@ -65,10 +53,11 @@ const Pokedex = ({ limit }: PokedexProps) => {
                     return <li>{poke.name}</li>
                 })}
             </ul>
-            <input type="number" onChange={(event) => setLimitData(Number(event.target.value))}  />
+            <input type="number" placeholder={(String(activeLimit))} onChange={(event) => setLimitData(Number(event.target.value))}  />
                 <button onClick={() => {
                     setActiveLimit(limitData)
                 }}>Set Limit</button>
+            <Abbout text=""></Abbout>
         </main>
     )
 }

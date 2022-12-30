@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import styles from "./ShoppingList.module.css"
+import Abbout from '../../Abbout/Abbout';
 
 interface ShoppingListItem {
   name: string;
@@ -51,9 +52,8 @@ const ShoppingList = () => {
         <input type="text" placeholder='name' value={name} onChange={(event) => setName(event.target.value)}></input>
         <label>Quantity:</label>
         <input type="number" placeholder="Quantity" value={quantity} onChange={(event) => setQuantity(parseInt(event.target.value))} />
+        <button onClick={addShoppingItem}>Add</button>
       </div>
-      <button onClick={addShoppingItem}>Add</button>
-
       <table>
         <thead>
           <tr>
@@ -77,6 +77,7 @@ const ShoppingList = () => {
         </tbody>
       </table>
     </div>
+    
 
   )
 }

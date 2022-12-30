@@ -2,6 +2,7 @@ import Timer from "./Timer"
 import styles from "./Interval.module.css"
 import CurrentTime from "./CurrentTime"
 import RandomValue from "./RandomValue"
+import Abbout from "../../Abbout/Abbout"
 
 
 const Interval = () => {
@@ -17,7 +18,7 @@ const Interval = () => {
         <br />
         <RandomValue min={100} max={200}/>
         </div>
-        
+        <Abbout text=""></Abbout>
         </>
     )
 }

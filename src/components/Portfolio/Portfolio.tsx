@@ -12,7 +12,7 @@ const Portfolio = () => {
                         <h1>ShoppingList</h1>
                     </header>
                     <body>
-                        <p>Here you will be able to check a little shopping list created with React, typescript and no further non-react libraries</p>
+                        <p>Here you will be able to check a little shopping list created with React, typescript and no further non-react libraries.</p>
                         <button>
                             <NavLink to="/portfolio/shoppinglist">Check it out!</NavLink>
                         </button>
@@ -29,7 +29,7 @@ const Portfolio = () => {
                     <body>
                         <p>Small filter and sort demonstration. Warning: Caps sensitive.</p>
                         <button>
-                            <NavLink to="/portfolio/filtering">Or this one?</NavLink>
+                            <NavLink to="/portfolio/filtering">Check it out!</NavLink>
                         </button>
                     </body>
                 </div>
@@ -43,7 +43,7 @@ const Portfolio = () => {
                     <body>
                         <p>Showing a timer, current time and random values.</p>
                         <button>
-                            <NavLink to="/portfolio/interval">Or this one?</NavLink>
+                            <NavLink to="/portfolio/interval">Check it out!</NavLink>
                         </button>
                     </body>
                 </div>
@@ -55,9 +55,9 @@ const Portfolio = () => {
                         <h1>Pokedex</h1>
                     </header>
                     <body>
-                        <p>Pokemon app using API calls from https://pokeapi.co/</p>
+                        <p>Pokemon app using API calls from https://pokeapi.co/.</p>
                         <button>
-                            <NavLink to="/portfolio/pokedex">Or this one?</NavLink>
+                            <NavLink to="/portfolio/pokedex">Check it out!</NavLink>
                         </button>
                     </body>
                 </div>
@@ -69,23 +69,23 @@ const Portfolio = () => {
                         <h1>DadJoke</h1>
                     </header>
                     <body>
-                        <p>DadJokes with a favorite joke setter using API calls from https://icanhazdadjoke.com/</p>
+                        <p>DadJokes with a favorite joke setter using API calls from https://icanhazdadjoke.com/.</p>
                         <button>
-                            <NavLink to="/portfolio/dadjoke">Or this one?</NavLink>
+                            <NavLink to="/portfolio/dadjoke">Check it out!</NavLink>
                         </button>
                     </body>
                 </div>
             </section>
 
             <section className={styles.bouncy2}>
-            <div>
+                <div>
                     <header>
                         <h1>Todo's</h1>
                     </header>
                     <body>
-                        <p>small todo's list with checkboxes</p>
+                        <p>Small todo's list with checkboxes.</p>
                         <button>
-                            <NavLink to="/portfolio/todo">Or this one?</NavLink>
+                            <NavLink to="/portfolio/todo">Check it out!</NavLink>
                         </button>
                     </body>
                 </div>
@@ -93,27 +93,34 @@ const Portfolio = () => {
 
             <section className={styles.bouncy3}>
                 <div>
-                    Hello world
                     <header>
-                        <button>
-                            <NavLink to="/">Check this one out!!</NavLink>
-                        </button>
+                        <h1>QuizApp</h1>
                     </header>
+                    <body>
+                        <p>Small QuizApp with 10 questions.</p>
+                        <button>
+                            <NavLink to="/portfolio/quizapp">Check it out!</NavLink>
+                        </button>
+                    </body>
                 </div>
             </section>
 
             <section className={styles.bouncy4}>
-                <div>Hello world
+                <div>
                     <header>
-                        <button>
-                            <NavLink to="/">Or maybe this one then?</NavLink>
-                        </button>
+                        <h1>To be finished</h1>
                     </header>
+                    <body>
+                        <p>N/A</p>
+                        <button>
+                            <NavLink to="/portfolio">Check it out!</NavLink>
+                        </button>
+                    </body>
                 </div>
             </section>
             <section className={styles.reactPortfolioMessage}>
-                <h2>Do You approve what you see?</h2>
-                <p>Please feel free to contact me with the button here below: </p>
+
+                <p>Please feel free to contact Me on the button here below: </p>
                 <HomeButton linkTo={"/contact"} text={"Contact"}></HomeButton>
             </section>
 
