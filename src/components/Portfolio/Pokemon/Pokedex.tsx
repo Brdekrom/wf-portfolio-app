@@ -54,7 +54,7 @@ const Pokedex = ({ limit }: PokedexProps) => {
         return <LoadingIndicator />
     }
     return (
-        <main className={styles.Main}>
+        <main className={styles.pokeMain}>
             <div>
                 <input type="text" onChange={event => setSearch(event.target.value)} value={search} />
                 
