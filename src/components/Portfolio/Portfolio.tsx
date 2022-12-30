@@ -78,12 +78,16 @@ const Portfolio = () => {
             </section>
 
             <section className={styles.bouncy2}>
-                <div>Hello world
+            <div>
                     <header>
-                        <button>
-                            <NavLink to="/">How about this one?</NavLink>
-                        </button>
+                        <h1>Todo's</h1>
                     </header>
+                    <body>
+                        <p>small todo's list with checkboxes</p>
+                        <button>
+                            <NavLink to="/portfolio/todo">Or this one?</NavLink>
+                        </button>
+                    </body>
                 </div>
             </section>
 
