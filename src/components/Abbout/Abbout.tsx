@@ -11,7 +11,7 @@ const Abbout = (props:AbboutProps) => {
         <p>{props.text}</p>
         <p>Colors where inspired by <a href="https://www.klmhealthservices.com/styleguide/kleurenpalet/"> <img className={styles.klm} src="/KLM_logo.png" alt="" /> </a></p>
         <p>This portfolio can be found in github as well.</p>
-        <a href="https://github.com/Brdekrom/wf-portfolio-app"><img src="/github-mark.png" alt="Github Link" /></a>
+        <a href="https://github.com/Brdekrom/wf-portfolio-app"><img className={styles.github} src="/github-mark.png" alt="Github Link" /></a>
         
         
     </article>

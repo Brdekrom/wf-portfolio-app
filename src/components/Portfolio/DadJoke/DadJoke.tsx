@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import styles from "./DadJoke.module.css"
 import FavJoke from "./FavJoke"
+import Abbout from "../../Abbout/Abbout"
 
 interface Joke {
     id: string,
@@ -35,9 +36,8 @@ const DadJoke = () => {
                     <button className={styles.jokeButton} onClick={e => loadJoke()}>New Joke</button>
                     <button className={styles.jokeButton} onClick={e => setFavJoke(joke)}>Set as Favorite</button>
                 </div>
-                {favJoke && <FavJoke joke={favJoke}/>
-                     
-                }
+                {favJoke && <FavJoke joke={favJoke}/>}
+                <Abbout text=""/>
             </div>
         </>
     )

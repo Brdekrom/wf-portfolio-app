@@ -11,6 +11,7 @@ import Interval from './components/Portfolio/Interval/Interval';
 import Pokedex from './components/Portfolio/Pokemon/Pokedex';
 import DadJoke from './components/Portfolio/DadJoke/DadJoke';
 import Todo from './components/Portfolio/Todo/Todo';
+import QuizApp from './components/Portfolio/QuizApp/QuizApp';
 
 
 function App() {
@@ -57,6 +58,10 @@ function App() {
         {
           path: "/portfolio/todo",
           element: <Todo />
+        },
+        {
+          path: "/portfolio/quizapp",
+          element: <QuizApp />
         }
 
 

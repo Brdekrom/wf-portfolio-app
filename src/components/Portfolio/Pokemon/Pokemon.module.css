@@ -1,13 +1,37 @@
-.PokeMain {
+.pokeMain {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    width: 50vw;
-    margin-left: 25vw;
+    max-width: 50vw;
+    margin-left: 25vw ;
+    margin-top: 10px;
 }
-.PokeMain input, .pokeMain button {
+.pokeMain input {
     width: 20vw;
 }
-.PokeMain button {
-    width: 20.4vw;
+.pokeMain button {
+    margin-top: 10px;
+    width: 20..2vw;
+}
+.pokeMain ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.pokeMain li {
+    border: 1px solid black;
+    border-radius: 5px;
+    text-shadow: 1px 1px 2px black ;
+    color: rgb(0, 39, 118);
+    font-size: 1rem;
+    padding: 5px 5px;
+    box-shadow: 0px 0px 5px 5px darkgray;
+    width: 10vw;
+    margin-top: 10px ;
+    text-align: center;
+
 }
