@@ -18,9 +18,7 @@ const PortfolioModule = (props:PortfolioModuleProps) => {
                     </header>
                     <body>
                         <p>{props.text}</p>
-                        <button>
-                            <NavLink to={props.navLinkTo}>Check it out!</NavLink>
-                        </button>
+                            <NavLink to={props.navLinkTo}> <button>Check it out!</button> </NavLink>
                     </body>
                 </div>
             </section>
