@@ -1,0 +1,73 @@
+.portfolioModule {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid green;
+    width: 20vw;
+    height: 20vh;
+    margin-top: 5vh;
+    color: white;
+    background-color: rgb(0, 161, 228);
+    border-radius: 5px;
+    border: 0px;
+    box-shadow: 1px 1px 2px black;
+    padding: 20px 20px;
+    font-size: 1.5rem;
+}
+
+.portfolioModule h1 {
+    color: rgb(227, 114, 34);
+    text-decoration: underline solid white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.portfolioModule button {
+    background-color: rgb(227, 114, 34);
+    text-align: center;
+    padding: 9px;
+    color: white;
+}
+
+.portfolioModule a {
+    color: white;
+}
+
+@keyframes bouncy {
+    0% {
+        top: 0em
+    }
+
+    40% {
+        top: 0em
+    }
+
+    43% {
+        top: -0.9em
+    }
+
+    46% {
+        top: 0em
+    }
+
+    48% {
+        top: -0.4em
+    }
+
+    50% {
+        top: 0em
+    }
+
+    100% {
+        top: 0em;
+    }
+}
+
+
+.portfolioModule:hover {
+    background-color: rgb(94, 182, 228);
+    color: white;
+    animation: bouncy 5s infinite linear;
+    position: relative;
+}

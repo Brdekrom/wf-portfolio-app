@@ -35,7 +35,7 @@ const Home = () => {
             <section className={styles.buttonContainer}>
             <HomeButton linkTo="/portfolio" text="Portfolio"></HomeButton>
             <HomeButton linkTo="/contact" text="Contact"></HomeButton>
-            </section>
+            </section> 
         </main>
         </>
     )

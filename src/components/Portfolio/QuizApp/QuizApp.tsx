@@ -1,53 +1,50 @@
 import { useEffect, useState } from "react"
 import { QuizQuestion, QuizResponse } from "./types"
-import LoadingIndicator from "../../LoadingIndicator/LoadingIndicator"
+import MultipleChoiceQuestion from "./MultipleChoiceQuestion"
 import Question from "./Question"
+import LoadingIndicator from "../../LoadingIndicator/LoadingIndicator"
+import {decode} from 'html-entities'
+
+decode('&lt; &gt; &quot; &apos; &amp; &#169; &#8710;');
 
 
 const QuizApp = () => {
-    const [questions, setQuestions] = useState<QuizQuestion[]>([])
-    const [loading, setLoading] = useState(false)
+    let [questions, setQuestions] = useState<QuizQuestion[]>([])
+    let [loading, setLoading] = useState(false)
 
-    const loadQuestions = async () => {
-
+    const questionLoader = async () => {
         setLoading(true)
         let response = await fetch("https://opentdb.com/api.php?amount=10")
-
-        let questionResponse: QuizResponse = await response.json()
-
-        setQuestions(questionResponse.results)
+        let fetchedQuestions: QuizResponse = await response.json()
+        let questionsArray = [...questions,...fetchedQuestions.results]
+        setQuestions(questionsArray)
         setLoading(false)
     }
 
     useEffect(() => {
-        loadQuestions();
-    },[])
+        questionLoader()
+    }, [])
 
-    const setUserAnswer = (answer:string, index: number) => {
+    const setUserAnswer = (answer: string, index: number) => {
         let newQuestions = [...questions]
         newQuestions[index].user_answer = answer
         setQuestions(newQuestions)
     }
 
-    const sortAnswers = (correctAnswer: string, wrongAnswers: string[]) => {
-        let allAnswers = [correctAnswer, ...wrongAnswers]
-        allAnswers.sort((a,b) => Math.random() - 0.5)
-        return allAnswers
-    }
-
     return (
-    <div>
-        {loading && <LoadingIndicator/>}
-        {questions.map((question, index) => {
-            return <Question 
-                question={question}
-                setUserAnswer={(answer) => setUserAnswer(answer, index)} 
-                allAnswers={[]} 
-                setAllAswers={function (answers: string[]) {
-                    throw new Error("Function not implemented.")
-                } }              />
-        }) }
-    </div>
+        <div>
+            {loading && <LoadingIndicator />}
+            {questions.map((question, index) => {
+                return <Question
+                    question={question}
+                    setUserAnswer={(answer) => setUserAnswer(answer, index)}
+                    allAnswers={[]}
+                    setAllAnswers={function (answers: string[]) {
+                        throw new Error("Function not implemented.")
+                    }} />
+            })}
+            <button onClick={questionLoader}>Load More</button>
+        </div>
     )
 }
 
